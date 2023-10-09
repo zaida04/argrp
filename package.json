@@ -1,7 +1,15 @@
 {
   "name": "argrp",
-  "description": "Easy way to use positional arguments in a NPM script",
+  "description": "The easy way to use positional arguments in a NPM script",
   "version": "1.0.0",
+  "keywords": [
+    "argrp",
+    "arguments",
+    "args",
+    "positional",
+    "script",
+    "util"
+  ],
   "main": "./index.js",
   "types": "./types/index.d.ts",
   "bin": "./cli.js",
