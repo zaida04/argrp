@@ -1,0 +1,20 @@
+{
+  "name": "argrp",
+  "description": "Easy way to use positional arguments in a NPM script",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "types": "./types/index.d.ts",
+  "bin": "./cli.js",
+  "files": [
+    "index.js",
+    "cli.js",
+    "types/index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.3",
+    "typescript": "^5.2.2"
+  }
+}
