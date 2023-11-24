@@ -7,16 +7,11 @@
  */
 function replaceArguments(command, args) {
 	const regex = /\$(\d+)/g;
-	const numbers = [];
 	let match;
 
 	while ((match = regex.exec(command)) !== null) {
-		numbers.push(match[1]);
-	}
-
-	if (numbers.length > 0) {
-		const number1 = numbers[0];
-		return command.replace(`$${number1}`, args[parseInt(number1) - 1]);
+		const index = match[1]
+		command = command.replace(`$${index}`, args[parseInt(index) - 1]);
 	}
 
 	return command;
