@@ -11,7 +11,7 @@ function replaceArguments(command, args) {
 
 	while ((match = regex.exec(command)) !== null) {
 		const index = match[1]
-		command = command.replaceAll(`$${index}`, args[parseInt(index) - 1]);
+		command = command.replace(`$${index}`, args[parseInt(index) - 1]);
 	}
 
 	return command;
